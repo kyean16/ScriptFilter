@@ -1,0 +1,7 @@
+#filterScript-button[status="on"]  {
+  list-style-image: url("chrome://filterScript/skin/On.png");
+}
+
+#filterScript-button[status="off"]{
+    list-style-image: url("chrome://filterScript/skin/Off.png");
+}

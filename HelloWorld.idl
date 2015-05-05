@@ -1,0 +1,7 @@
+#include "nsISupports.idl"
+
+[scriptable, uuid(xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)]
+interface nsIHelloWorld : nsISupports
+{
+  string hello();
+};

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+<?xml-stylesheet type="text/css"
+  href="chrome://filterScript/skin/browserOverlay.css" ?>
+
+<!DOCTYPE overlay SYSTEM
+  "chrome://filterScript/locale/browserOverlay.dtd">
+
+<overlay id="filterScript-browser-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript"
+    src="chrome://filterScript/content/browserOverlay.js" />
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="filterScript-string-bundle"
+      src="chrome://filterScript/locale/browserOverlay.properties" />
+  </stringbundleset>
+
+ <menuitem id="menu_ToolsPopup">
+  <menu id="filterScript-hello-menu" label="&filterScript.hello.label;"
+    insertafter="javascriptConsole,devToolsSeparator">
+  </menu>
+</menuitem> 
+  
+  <toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton id="filterScript-button" class="toolbarbutton-1"
+    status="on"
+    label="&filterScript.hello.label;" tooltiptext="&filterScript.hello.label;"
+    insertafter="BrowserToolbarPallet"
+    oncommand= "BrowserOverlay.toolbarClick(event);" />
+</toolbarpalette>
+  
+</overlay>
