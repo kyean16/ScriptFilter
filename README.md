@@ -12,3 +12,9 @@ https://developer.mozilla.org/en-US/Add-ons/Overlay_Extensions
 https://developer.mozilla.org/en-US/Add-ons/Code_snippets
 
 https://developer.mozilla.org/en-US/Add-ons/Overlay_Extensions/XUL_School
+
+Ressources for intercepting Info
+
+https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIContentPolicy
+
+https://developer.mozilla.org/en-US/Add-ons/Overlay_Extensions/XUL_School/Intercepting_Page_Loads#Content_Policy
