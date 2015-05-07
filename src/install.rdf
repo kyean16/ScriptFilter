@@ -1,3 +1,7 @@
+<!-- This is the information about the add-on, each tag gives information about who creted the APP and on
+version of Firefox is it suppose to run on. Fore more information about the tags:
+https://developer.mozilla.org/en-US/Add-ons/Install_Manifests -->
+
 <?xml version="1.0"?>
 
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"

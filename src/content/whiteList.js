@@ -1,0 +1,1 @@
+#Let websites whitelisted by the user to pass through without having to check incoming and outcoming requests.

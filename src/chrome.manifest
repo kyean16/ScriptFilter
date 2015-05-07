@@ -1,3 +1,14 @@
+#The chrome.manifest file tells Firefox where to look for chrome files.
+#The first word in the lines tells Firefox what is being declared
+#(content, skin, locale).The second is the package name.
+
+#Content = Javascript Code, XUL
+#Skin = CSS, images
+#Locale = Language Text
+
+#More information for Chrome Manifest:
+#https://developer.mozilla.org/en-US/Add-ons/Overlay_Extensions/XUL_School/The_Essentials_of_an_Extension
+
 content   filterScript                content/
 skin      filterScript  classic/1.0   skin/
 locale    filterScript  en-US         locale/en-US/

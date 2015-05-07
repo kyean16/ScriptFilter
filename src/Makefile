@@ -1,3 +1,8 @@
+# May, 2015:The make file is used to make compiling the whole program easier, if you are using a Mac using the command make in the
+# Terminal to compile all files. The compile will the be placed in the bin folder under the name
+# (extension_name)...
+#
+
 # The name of the extension.
 extension_name := filterScript
 
@@ -13,8 +18,9 @@ ZIP := zip
 # The target location of the build and build files.
 bin_dir := ../bin
 
-# The target XPI file.
+# The target XPI file a.k.a the name of the compiled xpi file once make command is used.
 xpi_file := $(bin_dir)/$(extension_name)09.xpi
+
 
 # The type of operating system this make command is running on.
 os_type := $(patsubst darwin%,darwin,$(shell echo $(OSTYPE)))

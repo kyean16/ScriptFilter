@@ -1,9 +1,9 @@
-var EXPORTED_SYMBOLS = ['ParserUrl'];
+var EXPORTED_SYMBOLS = ['ParserUrl']; //Named that links ParserURL to be used by browser Overlay JS
 
 //Constructor
 ParserUrl = function(aURL) {
 this._original = aURL;
-  this.setLocation(aURL);
+  this.setLocation(aURL); //Sets the setLocation the URL that was passed
 };
 
 ParserUrl.prototype = {

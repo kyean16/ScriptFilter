@@ -1,3 +1,5 @@
+/* Link the status of the filterscript button to On and Off */
+
 #filterScript-button[status="on"]  {
   list-style-image: url("chrome://filterScript/skin/On.png");
 }

@@ -12,6 +12,8 @@ var httpRequestObserver =
   count : 1,
   observe : function(aSubject, aTopic, aData)
   {
+    
+    
     if ("http-on-modify-request" == aTopic)
     { //If the http requested is different
       //window.alert("here");
@@ -41,6 +43,18 @@ var httpRequestObserver =
     }
   },
   
+  shouldLoad : function(aContentType, aContentLocation, aRequestOrigin, aContext, aMimeTypeGuess, aExtra) {
+  let result = Components.interfaces.nsIContentPolicy.ACCEPT;
+
+  // we should check for TYPE_SUBDOCUMENT as well if we want frames.
+  if ((Components.interfaces.nsIContentPolicy.TYPE_DOCUMENT == aContentType) &&
+      SOME_REGULAR_EXPRESSION.test(aContentLocation.spec)) {
+    // do stuff here, possibly changing result.
+  }
+
+    alert(result);
+  },
+  
   QueryInterface: function(aIID)
   {
     if (aIID.equals(Ci.nsIObsever) || aIID.equals(Ci.nesISupports))
@@ -51,7 +65,6 @@ var httpRequestObserver =
   },
   
   //http://www.softwareishard.com/blog/firebug/nsitraceablechannel-intercept-http-traffic/
-  
   
   loggingASubject: function(uri) //Logs the username
   {

@@ -17,19 +17,20 @@
     <stringbundle id="filterScript-string-bundle"
       src="chrome://filterScript/locale/browserOverlay.properties" />
   </stringbundleset>
-
+  
  <menuitem id="menu_ToolsPopup">
   <menu id="filterScript-hello-menu" label="&filterScript.hello.label;"
     insertafter="javascriptConsole,devToolsSeparator">
   </menu>
 </menuitem> 
   
+<!-- This add the add on button into Firefox, is it not automatically there it can be found in the preference option -->
   <toolbarpalette id="BrowserToolbarPalette">
     <toolbarbutton id="filterScript-button" class="toolbarbutton-1"
     status="on"
     label="&filterScript.hello.label;" tooltiptext="&filterScript.hello.label;"
     insertafter="BrowserToolbarPallet"
-    oncommand= "BrowserOverlay.toolbarClick(event);" />
+    oncommand= "BrowserOverlay.toolbarClick(event);"/> <!--Turns the add on and off when clicked -->
 </toolbarpalette>
   
 </overlay>
